@@ -1,5 +1,5 @@
 ---
-- hosts: slave1-2
+- hosts: Node2
   user: ansible
   become: true 
   tasks:
