@@ -5,8 +5,8 @@
   tasks:
     - name: Install Maven using Ansible
       become: yes
-      apt:
-        name: "{{ packages }}"
+      ansible build:
+        - name: "{{ packages }}"
         state: present
       vars:
         packages:
