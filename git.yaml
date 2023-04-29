@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  user: ansible
+  become: true
+  tasks:
+    - name: git install
+      ansible.builtin.apt:
+        name: git
+        state: present
+
